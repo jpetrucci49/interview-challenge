@@ -24,21 +24,21 @@ class Button extends Component {
     } = this.props;
 
     const themeObj = {};
-
+    
     switch(theme) {
       case 'stop':
         themeObj.class = 'red';
-        themeObj.variant = 'underlined';
+        themeObj.variant = 'outlined';
         themeObj.size = 'large';
         break;
       case 'go':
         themeObj.class = 'green';
-        themeObj.variant = 'raised';
+        themeObj.variant = 'contained';
         themeObj.size = 'medium';
         break;
       case 'yield':
         themeObj.class = 'yellow';
-        themeObj.variant = 'flat';
+        themeObj.variant = 'text';
         themeObj.size = 'small';
         break;
       default:

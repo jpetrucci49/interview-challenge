@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from './components';
+import { Button, ListCard } from './components';
 import './App.scss';
 
 class App extends Component {
@@ -11,6 +11,8 @@ class App extends Component {
         </header>
         <div className="component-list">
           <Button href="#" theme='go'> Button </Button>
+          <ListCard dash="hyphen"><div>Header</div> <div>List</div>
+          </ListCard>
         </div>
       </div>
     );
