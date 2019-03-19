@@ -14,7 +14,7 @@ class ListCard extends Component {
     dash,
     ...restProps
   } = this.props;
-  
+
   const themeObj = {};
 
   switch(theme){
@@ -28,16 +28,14 @@ class ListCard extends Component {
       themeObj.class = 'default'; 
   }
 
-  const 
   const classes = classNames('ui-card', className, {[themeObj.class]: [theme]});
 
     return (
       <Base
         className={classes}
-        dash={}
         {...restProps}
       >
-        {children.map((e, i) => i = 1 -- list text-de)}
+        {children}
       </Base>
     );
   }
